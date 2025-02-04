@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phero assaintment 03</title>
     
-    <!-- google fonts Sora -->
+    <!-- google fonts Sora + adlam-display-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -18,11 +18,11 @@
     <script src="https://kit.fontawesome.com/267bf650cf.js" crossorigin="anonymous"></script>
 
     <style>
-        .sora-regular {
+        .font-sora {
             font-family: "Sora", serif;
             font-optical-sizing: auto;
         }
-        .adlam-display-regular {
+        .font-adlam {
             font-family: "ADLaM Display", serif;
             
         }
@@ -44,7 +44,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        accent: '#FFDC26',
                     }
                 }
             }
@@ -52,8 +52,60 @@
     </script>
 </head>
 <body>
-    <h1 class="adlam-display-regular ">Pamper Your Pet, Because They Deserve the Bes</h1>
-    <p class="sora-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quis eos. Harum dolor, sint laudantium rerum iste accusamus illum ullam eaque qui fuga incidunt delectus saepe ad, corporis pariatur maiores eum aliquid! Tenetur delectus eos accusantium maxime exercitationem est itaque corporis ut consequuntur tempore, facilis eius nesciunt quis pariatur eveniet aliquid fuga ducimus ullam recusandae? Qui aspernatur dignissimos quam totam obcaecati esse porro aperiam itaque, beatae distinctio! Itaque impedit laudantium aliquam illo sequi iusto assumenda, aut aperiam exercitationem? Temporibus at vero doloremque, provident eaque, aut, expedita tenetur vel aliquam omnis asperiores laboriosam labore odit. Atque aliquid placeat nesciunt asperiores amet.</p>
+    <header class="lg:mb-[170px]">
+        <nav class=" font-sora bg-[#FFF9F4] border-[#111111] border-[0.5px] sm:border-none">
+          <div class="navbar text-[#111111] text-xl ">
+            <div class="navbar-start gap-2 pt-3 pb-3 lg:ml-[140px] sm:ml-[16px] ">
+              <img class=" block " src="c1-assets/logo-header.png" alt="">
+              <h1 class="hidden sm:block text-3xl">Browse<span class="text-[#FFDC26]">4</span>pets</h1>
+            </div>
+      
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 mx-auto">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class=" navbar-end lg:me-[140px] gap-4  hidden sm:flex">
+      
+                <a><i class="fa-regular  text-xl fa-bell"></i></a>
+                <a><i class="fa-solid  text-xl fa-magnifying-glass"></i></a>
+              <button class="btn btn-ghost rounded-lg border-[#FFDC26] pt-2 pb-2 pl-6 pr-6 font-normal">Login</button>
+              <button class="btn bg-[#FFDC26] pt-2 pb-2 pl-6 pr-6 rounded-lg font-normal">Register</button>
+            </div>
+            <div class=" navbar-end me-[16px] lg:hidden">
+              <button id="menu-toggle" class="focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+      
+      
+            </div>
+      
+        </nav>
+        <!-- banner section -->
+        <section class="font-adlam mt-[30px] ml-[16px] me-[16px] lg:ml-[140px] lg:me-[140px] lg:mt-[76px]">
+          <div class="flex flex-col">
+            <!-- text -->
+            <div class=" lg:absolute">
+              <h1 class="font-2 mb-3 text-black text-[30px]  lg:text-[56px]">Pamper Your Pet,<br> Because They Deserve <br>
+                the Bes</h1>
+              <p class="  text-[16px] font-normal mb-3 lg:text-[20px]">Discover a world of treats, toys, and 
+                <br class="sm:hidden"> essentials <br class="lg:block hidden"> handpicked for your furry <br class="sm:hidden">
+                friends. Shop now and make tails wag with <br class="sm:hidden">joy!</p>
+              <button class="btn bg-[accent] pt-2 pb-2 pl-6 pr-6 rounded-lg font-normal">Find a pet</button>
+            </div>
+      
+            <!-- image -->
+            <div class="flex">
+                <img class="flex-end" src="assets/cat-big.png" alt="">
+            </div>
+          </div>
+        </section>
+      </header>
     
 </body>
 </html>
