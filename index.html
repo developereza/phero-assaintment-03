@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phero assaintment 03</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- google fonts Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- daisyUI + TailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/267bf650cf.js" crossorigin="anonymous"></script>
+
+    <style>
+        .sora-regular {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+        }
+        .adlam-display-regular {
+            font-family: "ADLaM Display", serif;
+            
+        }
+
+
+        #myAnimation {
+            animation: mymove 10s infinite;
+        }
+
+        @keyframes mymove {
+            50% {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <!-- customize things -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
+    <h1 class="adlam-display-regular ">Pamper Your Pet, Because They Deserve the Bes</h1>
+    <p class="sora-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quis eos. Harum dolor, sint laudantium rerum iste accusamus illum ullam eaque qui fuga incidunt delectus saepe ad, corporis pariatur maiores eum aliquid! Tenetur delectus eos accusantium maxime exercitationem est itaque corporis ut consequuntur tempore, facilis eius nesciunt quis pariatur eveniet aliquid fuga ducimus ullam recusandae? Qui aspernatur dignissimos quam totam obcaecati esse porro aperiam itaque, beatae distinctio! Itaque impedit laudantium aliquam illo sequi iusto assumenda, aut aperiam exercitationem? Temporibus at vero doloremque, provident eaque, aut, expedita tenetur vel aliquam omnis asperiores laboriosam labore odit. Atque aliquid placeat nesciunt asperiores amet.</p>
     
 </body>
 </html>
